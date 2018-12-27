@@ -3,3 +3,10 @@
 ################################################################################
 
 /DatingApp.API/bin/Debug/netcoreapp2.1
+/.vs/DatingApp.API/v15
+/DatingApp.API/obj
+/DatingApp.Core/bin/Debug/netcoreapp2.1
+/DatingApp.Core/obj
+/DatingApp.Data/bin/Debug/netcoreapp2.1
+/DatingApp.Data/obj
+/DatingAPP.Domain/obj
