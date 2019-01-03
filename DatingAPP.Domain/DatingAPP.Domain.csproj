@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DatingApp.Core\DatingApp.Core.csproj" />
+    <ProjectReference Include="..\DatingApp.Data\DatingApp.Data.csproj" />
+  </ItemGroup>
+
 </Project>
