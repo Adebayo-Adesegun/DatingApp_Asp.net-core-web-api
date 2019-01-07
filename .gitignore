@@ -10,3 +10,5 @@
 /DatingApp.Data/bin/Debug/netcoreapp2.1
 /DatingApp.Data/obj
 /DatingAPP.Domain/obj
+/DatingApp.API/bin/Release/netcoreapp2.1
+/DatingAPP.Domain/bin/Debug/netcoreapp2.1
