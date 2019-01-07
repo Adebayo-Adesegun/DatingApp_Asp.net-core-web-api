@@ -21,7 +21,7 @@ namespace DatingApp.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Values>> Get()
         {
-            return _context.Values.ToList(); ; ;
+            return _context.Values.ToList();
         }
 
         // GET api/values/5
