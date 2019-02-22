@@ -1,4 +1,5 @@
-﻿using DatingApp.Core.Interfaces;
+﻿using DatingApp.Core;
+using DatingApp.Core.Interfaces;
 using DatingApp.Core.Models;
 using DatingApp.Data;
 using Microsoft.EntityFrameworkCore;
@@ -33,12 +34,11 @@ namespace DatingAPP.Domain.Managers
             return await _context
                              .SaveChangesAsync() > 0;
         }
-        public async Task<IEnumerable<User>> GetUsers()
+        public async Task<PagedList<User>> GetUsers(UserParams userParams)
         {
-            var users = await _context.Users
-                                 .Include(p => p.Photos)
-                                 .ToListAsync();
-            return users;
+            var users =  _context.Users
+                                 .Include(p => p.Photos);
+            return await PagedList<User>.CreateAsync(users, userParams.PageNumber, userParams.PageSize);
         }
         public async Task<User> GetUser(int Id)
         {

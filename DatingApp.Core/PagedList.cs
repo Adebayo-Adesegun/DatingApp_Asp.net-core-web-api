@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DatingApp.API.Helpers
+namespace DatingApp.Core
 {
     public class PagedList<T>: List<T>
     {
