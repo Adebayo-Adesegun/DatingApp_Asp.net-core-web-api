@@ -6,6 +6,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Daniel\Source\Repos\DatingApp\DatingApp\DatingApp.API\bin\Release\netcoreapp2.1\publish\</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\wwwroot\DatingAPP</_PublishTargetUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=LAPTOP-D0R6NFMR%3b Initial Catalog=DatingAppDB%3bIntegrated Security=false%3buser=sa%3bpassword=password</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
 </Project>
